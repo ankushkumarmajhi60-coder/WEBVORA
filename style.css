@@ -1,3 +1,5 @@
+/* ===== WEBVORA RESET ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -698,5 +700,117 @@ footer {
     .footer-bottom {
         flex-direction: column;
         gap: 8px;
+    }
+}
+#home button + button {
+    margin-top: 20px;
+}
+/* ===== HEADER LOGO SIZE ===== */
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+/* ===== HERO TWO COLUMN LAYOUT ===== */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    max-width: 750px;
+}
+
+.hero-text p {
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ===== RIGHT PROJECT CARD ===== */
+
+.hero-form-preview {
+    background: #171e2d;
+    border: 1px solid #273148;
+    border-radius: 22px;
+    padding: 35px;
+    max-width: 420px;
+    width: 100%;
+    margin-left: auto;
+    transform: rotate(3deg);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.preview-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0b0f19;
+    border: 1px solid #273148;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.hero-form-preview h3 {
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.hero-form-preview label {
+    display: block;
+    color: #b8c0d4;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.preview-input {
+    background: #0b0f19;
+    border: 1px solid #273148;
+    border-radius: 10px;
+    padding: 13px 15px;
+    color: #70798d;
+    margin-bottom: 17px;
+}
+
+.preview-button {
+    background: #6c63ff;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .hero-form-preview {
+        margin: 0 auto;
+        transform: rotate(0deg);
     }
 }
