@@ -929,3 +929,8 @@ header .logo img {
     object-position: left center;
     display: block;
 }
+/* ===== NAVIGATION SCROLL FIX ===== */
+
+section {
+    scroll-margin-top: 85px;
+}
